@@ -1,0 +1,59 @@
+Windows Command Prompt (CMD) is a command-line interface provided by Microsoft Windows for executing various system commands and tasks. CMD allows users to interact with the operating system and perform tasks ranging from file and directory management to system configuration and network troubleshooting. Below is a list of common CMD commands, organized into segments based on their functionalities:
+
+File and Directory Commands:
+
+1. dir: List files and directories in the current directory.
+2. cd: Change the current directory.
+3. cd ..: Move up one directory level.
+4. cls: Clear the screen.
+5. md or mkdir: Create a new directory.
+6. rd or rmdir: Remove/delete a directory.
+7. copy: Copy files or directories.
+8. move: Move or rename files or directories.
+9. del: Delete a file.
+10. ren: Rename a file.
+11. type: Display the contents of a text file.
+12. edit: Open a text editor.
+13. notepad: Open Notepad.
+
+System and Configuration:
+
+14. echo: Display text to the console.
+15. date: Display or set the system date.
+16. time: Display or set the system time.
+17. systeminfo: Display system information.
+18. chkdsk: Check and repair disk drives.
+19. sfc /scannow: Scan and repair system files.
+20. gpupdate: Refresh Group Policy settings.
+21. gpresult: Display Group Policy settings.
+22. regedit: Open the Windows Registry Editor.
+23. shutdown: Shutdown or restart the computer.
+24. taskmgr: Open Task Manager.
+25. calc: Open the Windows Calculator.
+26. control: Open the Control Panel.
+
+Networking and Connectivity:
+
+27. ipconfig: Display IP configuration information.
+28. ping: Send ICMP echo requests to a host.
+29. tracert: Trace the route to a host.
+30. netstat: Display network statistics.
+
+Process Management:
+
+31. tasklist: List running processes.
+32. taskkill: Terminate a running process.
+
+Windows Utilities:
+
+33. notepad++: Open Notepad++ (if installed).
+34. explorer: Open Windows File Explorer.
+35. wmic: Windows Management Instrumentation Command-line tool.
+
+System Shutdown and Restart:
+
+36. shutdown /s: Shutdown the computer.
+37. shutdown /r: Restart the computer.
+38. shutdown /l: Log off the current user.
+39. shutdown /h: Hibernate the computer.
+40. shutdown /f: Forcefully shutdown the computer.

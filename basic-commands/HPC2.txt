@@ -1,0 +1,75 @@
+How to Use GPU on HPC through Slurm:
+
+
+0. Check GPU resources:
+	- nvcc --version
+	- module avail cuda
+
+1. Here's an example of a Python script (my_gpu_script.py) that utilizes GPU resources for a simple task using the TensorFlow library:
+
+   - Install TensorFlow: 
+     ```
+     pip install tensorflow
+     ```
+
+   - my_gpu_script.py
+
+     ```python
+     import tensorflow as tf
+     
+     # Check if GPU is available
+     if tf.test.is_gpu_available():
+         print("GPU is available")
+     else:
+         print("GPU is not available")
+     
+     # Create a simple TensorFlow computation on GPU
+     with tf.device('/GPU:0'):
+         a = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], name='a')
+         b = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], name='b')
+         c = a * b
+     
+     # Start a TensorFlow session
+     with tf.Session() as sess:
+         result = sess.run(c)
+         print("Result of GPU computation:", result)
+     ```
+
+2. Create a job script, such as my_gpu_job.sh, and customize it according to your Python script's requirements. Here's an example of a job script for running a Python script that uses GPU resources:
+
+   - sbatch my_gpu_job.sh
+
+   ```bash
+   #!/bin/bash
+   #SBATCH --partition=gpu  # Specify the GPU partition
+   #SBATCH --gres=gpu:1    # Request 1 GPU
+   #SBATCH --time=03:00:00  # Request a maximum of 3 hours
+   #SBATCH --mem=4G        # Request 4GB of memory per CPU
+   #SBATCH --output=output.log  # Specify an output log file
+
+   # Load any necessary modules or activate virtual environments
+   module load cuda/11.0  # Load the appropriate CUDA version
+   source activate myenv  # Activate your Python virtual environment if needed
+
+   # Run your Python script that utilizes GPU
+   python my_gpu_script.py
+
+3. Submit the Job, use the sbatch command to submit your job script to the cluster:
+
+```
+$ sbatch my_gpu_job.sh
+```
+
+4. Check job status:
+
+squeue -u <username>
+
+5. On completion see the log:
+
+cat output.log
+tail -n 10 output.log
+
+6. Kill jobs 
+
+scancel <job-id>
+

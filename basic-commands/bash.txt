@@ -1,0 +1,78 @@
+Bash (Bourne-Again Shell) is a popular command-line shell for Unix-like operating systems. It provides a text-based interface for interacting with your computer's file system and running various commands and scripts. Below is a list of common Bash commands along with their basic descriptions:
+
+File and Directory Commands:
+
+1. ls: List files and directories in the current directory.
+2. pwd: Print the current working directory.
+3. cd: Change the current directory.
+4. touch: Create an empty file.
+5. mkdir: Create a new directory.
+6. cp: Copy files or directories.
+7. mv: Move or rename files or directories.
+8. rm: Remove/delete files or directories.
+9. find: Search for files and directories.
+10. grep: Search for patterns in files.
+11. cat: Display the contents of a file.
+12. less: View files interactively (page by page).
+13. head: Display the first few lines of a file.
+14. tail: Display the last few lines of a file.
+15. chmod: Change file permissions.
+16. chown: Change file ownership.
+17. ln: Create symbolic or hard links.
+
+Text and File Manipulation:
+
+18. echo: Print text to the terminal.
+19. tee: Read from standard input and write to files or the terminal.
+20. sed: Stream editor for text manipulation.
+21. awk: Text processing tool for pattern scanning and processing.
+22. cut: Remove sections from lines of files.
+23. sort: Sort lines of text files.
+24. uniq: Remove duplicate lines from a sorted file.
+
+System Information and Management:
+
+25. ps: List running processes.
+26. top: Monitor system activity in real-time.
+27. df: Show disk space usage.
+28. du: Show file and directory space usage.
+29. free: Display system memory usage.
+30. uname: Display system information.
+31. date: Display or set the system date and time.
+32. shutdown: Shutdown or restart the system.
+
+User and Permissions:
+
+33. who: Display currently logged-in users.
+34. useradd: Add a new user.
+35. passwd: Change user password.
+36. sudo: Execute commands with superuser privileges.
+37. su: Switch user or execute commands as another user.
+38. groups: List user groups.
+39. chpasswd: Change passwords in batch.
+
+Networking:
+
+40. ping: Send ICMP echo requests to a host.
+41. ifconfig: Display or configure network interfaces.
+42. netstat: Display network connections.
+43. ssh: Secure Shell for remote access.
+44. scp: Securely copy files between hosts.
+45. wget: Download files from the internet.
+46. curl: Transfer data with URLs.
+
+Process Control:
+
+47. kill: Terminate processes by PID or name.
+48. killall: Kill processes by name.
+49. nohup: Run a command that survives logout.
+50. bg: Put a process in the background.
+51. fg: Bring a background process to the foreground.
+
+Archiving and Compression:
+
+52. tar: Create, list, or extract files from a tar archive.
+53. gzip: Compress files.
+54. gunzip: Decompress gzipped files.
+55. zip: Create and extract zip archives.
+56. unzip: Extract files from zip archives.

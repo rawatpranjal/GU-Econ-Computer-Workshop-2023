@@ -1,0 +1,10 @@
+
+1. Integrating with github
+
+!git config --global user.email "pranjal.rawat@outlook.com"
+!git config --global user.name "rawatpranjal"
+!git clone https://github.com/rawatpranjal/double-auctions.git
+!git add .
+!git commit -m 'dfs'
+!git push https://rawatpranjal:<TOKEN>/rawatpranjal/double-auctions.git --all
+
